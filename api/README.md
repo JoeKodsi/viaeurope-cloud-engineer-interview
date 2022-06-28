@@ -1,6 +1,6 @@
 # API
 
-API that calculates sums. Latest result is stored in redis.
+API that calculates sums for 1..n. Latest result is stored in redis.
 
 Runs on port `4567` by default
 
