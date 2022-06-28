@@ -1,9 +1,19 @@
 require "sinatra"
+require "redis"
+
+REDIS_URL = ENV.fetch("REDIS_URL", "redis://localhost:6379/api")
+
+redis = Redis.new(url: REDIS_URL)
+
+get "/healthcheck" do
+  "OK"
+end
 
 get "/" do
   content_type :json
 
-  {greeting: "Hello world."}.to_json
+  last_sum = redis.get("sum") || 0
+  {last_sum:}.to_json
 end
 
 post "/sum" do
@@ -32,7 +42,10 @@ post "/sum" do
     Sinatra::Application.quit! # Crash and burn
   end
 
-  {sum: slow_sum(n)}.to_json
+  sum = slow_sum(n)
+  redis.set("sum", sum)
+
+  {sum:}.to_json
 rescue
   halt 400, {error: "invalid json"}.to_json
 end

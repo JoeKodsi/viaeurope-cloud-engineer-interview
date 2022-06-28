@@ -1,0 +1,39 @@
+version: "3.9"
+services:
+  api:
+    build: 
+      context: ./api
+    ports: 
+      - 8888:4567
+    environment:
+      - REDIS_URL=redis://redis:6379/api
+    networks:
+      - backend
+    depends_on:
+      - redis
+  client:
+    build: 
+      context: ./client
+    ports: 
+      - 7777:4567
+    volumes:
+      - dbVolume:/var/db
+    links:
+      - api
+    environment:
+      - SERVER_URL=http://api:4567
+      - DB_FILE=/var/db
+    networks:
+      - backend
+      - frontend
+    depends_on:
+      - api
+  redis:
+    image: redis
+    networks:
+      - backend
+volumes:
+  dbVolume: {}
+networks:
+  backend: {}
+  frontend: {}
