@@ -14,7 +14,7 @@
 
 ## Tasks
 
-### 1. Setup application
+### 1. Deploy application
 
 #### Requirements
 
