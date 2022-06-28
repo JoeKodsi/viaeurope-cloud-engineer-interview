@@ -20,6 +20,10 @@ get "/healthcheck" do
   "OK"
 end
 
+get "/logs" do
+  File.read(DB_FILE)
+end
+
 def get_sum
   response = Net::HTTP.get_response(SERVER_URI, {"Content-Type" => "application/json"})
   body = JSON.parse(response.body)
@@ -38,5 +42,5 @@ def calculate_sum(n)
 end
 
 def write_to_db!(line)
-  File.write(DB_FILE, "#{line}\n")
+  File.write(DB_FILE, "#{line}\n", mode: "a")
 end
