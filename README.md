@@ -4,13 +4,12 @@
 
 ![Architecture Diagram](/images/architecture.svg)
 
-## Endpoints
+## Public Endpoints
 
 | Path | Description |
 | ---- | ----------- |
 | /    | Get latest sum | 
 | /?n={number} | Calculate sum for the number |
-| /healthcheck | Returns OK |
 
 ## Tasks
 
