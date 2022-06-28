@@ -11,6 +11,11 @@
 | /    | Get latest sum | 
 | /?n={number} | Calculate sum for the number |
 
+## Running the application locally
+
+1. `docker compose up`
+2. `open http://localhost:4567`
+
 ## Tasks
 
 ### 1. Deploy application
