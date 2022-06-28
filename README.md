@@ -18,6 +18,8 @@
 
 ## Tasks
 
+The first task should be completed first, but the rest may be completed in any order. We don't expect you to finish all of the tasks.
+
 ### 1. Deploy application
 
 #### Requirements
