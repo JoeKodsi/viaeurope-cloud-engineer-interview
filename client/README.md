@@ -22,4 +22,4 @@ Runs on port `4567` by default
 | -----  | ---- | ----------- |
 | GET    | /    | Returns the latest sum |
 | GET    | /healthcheck | Returns OK |
-| GET    | /sum?n=5 | Calculates the sum |
+| GET    | /sum?n=5 | Calculates the sum for 1..n |
