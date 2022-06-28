@@ -22,6 +22,6 @@ Runs on port `4567` by default
 | -----  | ---- | ---------- | ----------- |
 | GET    | /    |            | Returns the latest sum |
 | GET    | /healthcheck |    | Returns OK |
-| POST   | /sum | {"n": 42}  | Calculates the sum |
+| POST   | /sum | {"n": 42}  | Calculates the sum 1..n |
 | POST   | /sum | {"n": 13}  | Crashes the application  |
 | POST   | /sum | {"n": 9999999999}  | Takes a long time to calculate and takes 100% CPU |
