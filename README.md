@@ -41,7 +41,8 @@ We want to have 2 API servers in order to have some redundancy.
 
 ### 5. The API server should scale up automatically
 
-Requesting a sum with a large number requires a lot of resources. 
+Requesting a sum with a large number requires a lot of resources.
+
 Example: `/?n=999999999`
 
 The API server should scale up to handle additional traffic.
