@@ -9,7 +9,7 @@
 | Path | Description |
 | ---- | ----------- |
 | /    | Get latest sum | 
-| /?n={number} | Calculate sum for the number |
+| /?n={number} | Calculate sum for 1..number |
 
 ## Running the application locally
 
