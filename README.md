@@ -32,6 +32,7 @@ Example: `docker compose exec -it client irb`
 ### 3. The API server should recover from crashes
 
 The api server crashes if the following endpoint is accessed: `/?n=13`
+
 The api server should automatically restart
 
 ### 4. API server replicas
