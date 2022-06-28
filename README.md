@@ -26,6 +26,7 @@
 
 Developers want to access the running application in order to debug it. 
 The command to access a REPL is `irb`
+
 Example: `docker compose exec -it client irb`
 
 ### 3. The API server should recover from crashes
