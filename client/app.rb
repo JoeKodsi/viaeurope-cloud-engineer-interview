@@ -9,7 +9,6 @@ get "/" do
 
   if n
     sum = calculate_sum(n)
-    write_to_db!(sum)
     "Your sum was #{sum}"
   else
     "Last sum was #{get_sum}"
@@ -18,10 +17,6 @@ end
 
 get "/healthcheck" do
   "OK"
-end
-
-get "/logs" do
-  File.read(DB_FILE)
 end
 
 def get_sum
@@ -39,8 +34,4 @@ def calculate_sum(n)
   else
     body["sum"]
   end
-end
-
-def write_to_db!(line)
-  File.write(DB_FILE, "#{line}\n", mode: "a")
 end

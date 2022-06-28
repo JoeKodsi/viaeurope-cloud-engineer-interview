@@ -16,8 +16,6 @@ services:
       context: ./client
     ports: 
       - 7777:4567
-    volumes:
-      - dbVolume:/var/db
     links:
       - api
     environment:
@@ -30,10 +28,13 @@ services:
       - api
   redis:
     image: redis
+    command: redis-server --appendonly yes
     networks:
       - backend
+    volumes:
+      - redisVolume:/data
 volumes:
-  dbVolume: {}
+  redisVolume: {}
 networks:
   backend: {}
   frontend: {}

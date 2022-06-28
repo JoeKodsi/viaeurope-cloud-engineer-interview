@@ -10,8 +10,13 @@
 | ---- | ----------- |
 | /    | Get latest sum | 
 | /?n={number} | Calculate sum for the number |
-| /logs | Get history of all calculated sums |
 | /healthcheck | Returns OK |
+
+## Requirements
+
+1. Client should be public
+2. API and redis should be private
+3. Redis storage should persist between restarts
 
 ## Tasks
 
