@@ -39,9 +39,9 @@ The api server crashes if the following endpoint is accessed: `/?n=13`
 
 The api server should automatically restart
 
-### 4. API server replicas
+### 4. Replicas
 
-We want to have 2 API servers in order to have some redundancy.
+We want to have 2 Client and API servers in order to have some redundancy.
 
 ### 5. The API server should scale up automatically
 
