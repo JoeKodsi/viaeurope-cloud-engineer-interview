@@ -18,8 +18,8 @@
 
 #### Requirements
 
-1. Client should be publicly accessible
-2. API and redis should be private
+1. Client should be publicly accessible. The client exposes port `4567`
+2. API and redis should be private. The API exposes port `4567`
 3. Redis storage should persist between restarts
 
 ### 2. Grant developers access to irb console

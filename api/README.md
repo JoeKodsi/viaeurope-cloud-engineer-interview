@@ -2,6 +2,8 @@
 
 API that calculates sums. Latest result is stored in redis.
 
+Runs on port `4567` by default
+
 ## Environment variables for Configuration
 
 | Name | Description | Example  |
@@ -12,11 +14,14 @@ API that calculates sums. Latest result is stored in redis.
 
 `ruby app.rb`
 
+`open http://localhost:4567`
+
 ## Endpoints
 
 | Method | Path | Payload    | Description |
 | -----  | ---- | ---------- | ----------- |
 | GET    | /    |            | Returns the latest sum |
+| GET    | /healthcheck |    | Returns OK |
 | POST   | /sum | {"n": 42}  | Calculates the sum |
 | POST   | /sum | {"n": 13}  | Crashes the application  |
 | POST   | /sum | {"n": 9999999999}  | Takes a long time to calculate and takes 100% CPU |
