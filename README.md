@@ -18,7 +18,7 @@
 
 #### Requirements
 
-1. Client should be public
+1. Client should be publicly accessible
 2. API and redis should be private
 3. Redis storage should persist between restarts
 
