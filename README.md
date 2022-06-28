@@ -49,7 +49,7 @@ The API server should scale up to handle additional traffic.
 
 In order to improve up-time, we want to gradually deploy changes.
 
-### Bonus: Continuous Deployment
+### 7. Continuous Deployment
 
 When a new commit is pushed to github, we should automatically build and deploy
 the docker image.
