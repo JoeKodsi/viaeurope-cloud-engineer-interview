@@ -14,6 +14,8 @@ post "/sum" do
 
   n = data["n"]
 
+  logger.info "\"/sum\" #{data.inspect}"
+
   if n.nil?
     halt 422, {error: "n needs to be set"}.to_json
   end
