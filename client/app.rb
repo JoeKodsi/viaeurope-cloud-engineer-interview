@@ -1,7 +1,6 @@
 require "sinatra"
 require "net/http"
 
-DB_FILE = "#{ENV.fetch("DB_FILE", "db")}/db_file"
 SERVER_URI = URI(ENV.fetch("SERVER_URL", "127.0.0.1:4567"))
 
 get "/" do
