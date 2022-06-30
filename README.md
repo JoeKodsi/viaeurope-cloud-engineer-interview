@@ -22,7 +22,9 @@
 
 ```bash
 docker compose up
-open http://localhost:7777
+curl http://localhost:7777 # Last sum was: 0
+curl http://localhost:7777/?n=3 # Your sum was 15
+curl http://localhost:7777 # Last sum was: 15
 ```
 
 ## Tasks
