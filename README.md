@@ -4,7 +4,7 @@
 
 1. Fork the repository
 2. Get familiar with the application. We're here to answer any questions you might have!
-3. Do the tasks!
+3. Do the tasks! If you come up with any, please tell us and feel free to do them!
 4. After the session, please set your fork to private
 
 ## Architecture
@@ -29,7 +29,7 @@ curl http://localhost:7777 # Last sum was: 15
 
 ## Tasks
 
-The first task should be completed _first_, but the rest may be completed in any order. If you think of other important tasks not on this list, please tell us and do them!
+The first task should be completed _first_, but the rest may be completed in any order. If you think of other important tasks not on this list, please tell us and feel free do them!
 
 We don't expect you to finish all of the tasks in the session! 
 
