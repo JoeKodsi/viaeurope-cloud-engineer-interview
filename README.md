@@ -22,7 +22,7 @@
 
 ```bash
 docker compose up
-open http://localhost:4567
+open http://localhost:7777
 ```
 
 ## Tasks
