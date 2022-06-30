@@ -51,5 +51,5 @@ rescue
 end
 
 def slow_sum(n)
-  (0..n).inject(0, &:+)
+  (0..n).reduce(&:+)
 end
