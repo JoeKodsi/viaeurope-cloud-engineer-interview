@@ -44,7 +44,7 @@ We don't expect you to finish all of the tasks in the session!
 
 ### 2. Redis recovers state on restart
 
-Right now Redis's state is lost if the redis server is restarted. We'd like to persist the state between reboots.
+Right now Redis's state is lost if the redis server is restarted. We'd like to persist the state between restarts.
 
 Redis can be configured to write to disk using `redis-server --appendonly yes`. The redis server then writes its
 state to `/data` inside the container.
