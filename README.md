@@ -37,10 +37,12 @@ We don't expect you to finish all of the tasks in the session!
 
 #### Requirements
 
-1. Client should be publicly accessible. The client exposes port `4567`
-2. API and redis should be private. The API exposes port `4567`
-3. We'd like to version our infrastructure, so please use your favorite IaC
+1. The application should be hosted on AWS
+1. We'd like to version our infrastructure, so please use your favorite IaC
    tool. You can add your code in the `infrastructure` directory.
+1. Client should be publicly accessible. The client exposes port `4567`
+1. API and redis should be private. The API exposes port `4567`
+
 
 ### 2. Redis recovers state on restart
 
