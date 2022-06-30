@@ -1,4 +1,11 @@
-# Cloud Engineer Interview
+# ViaEurope Cloud Engineer Interview Problem
+
+## Overview
+
+1. Fork the repository
+2. Get familiar with the application
+3. Do the tasks :) 
+4. After the session, please set your fork to private
 
 ## Architecture
 
@@ -18,7 +25,9 @@
 
 ## Tasks
 
-The first task should be completed first, but the rest may be completed in any order. We don't expect you to finish all of the tasks.
+The first task should be completed _first_, but the rest may be completed in any order. 
+
+We don't expect you to finish all of the tasks in the session! 
 
 ### 1. Deploy application
 
@@ -27,6 +36,8 @@ The first task should be completed first, but the rest may be completed in any o
 1. Client should be publicly accessible. The client exposes port `4567`
 2. API and redis should be private. The API exposes port `4567`
 3. Redis storage should persist between restarts
+4. We'd like to version our infrastructure, so please use your favorite IaC
+   tool. You can add your code in the `infrastructure` directory.
 
 ### 2. The API server should recover from crashes
 
@@ -40,11 +51,11 @@ We want to have 2 Client and API servers in order to have some redundancy.
 
 ### 4. The API server should scale up automatically
 
-Requesting a sum with a large number requires a lot of resources.
+Requesting a sum with a large number takes up a lot of CPU time.
 
 Example: `/?n=999999999`
 
-The API server should scale up to handle additional traffic.
+The API server should autoscale to handle the additional load traffic.
 
 ### 5. Blue / Green deployment
 
