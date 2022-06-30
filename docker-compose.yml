@@ -21,7 +21,6 @@ services:
       - api
     environment:
       - SERVER_URL=http://api:4567
-      - DB_FILE=/var/db
     networks:
       - backend
       - frontend
