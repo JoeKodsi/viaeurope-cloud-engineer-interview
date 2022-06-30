@@ -29,7 +29,7 @@ curl http://localhost:7777 # Last sum was: 15
 
 ## Tasks
 
-The first task should be completed _first_, but the rest may be completed in any order. 
+The first task should be completed _first_, but the rest may be completed in any order. If you think of other important tasks not on this list, please tell us and do them!
 
 We don't expect you to finish all of the tasks in the session! 
 
