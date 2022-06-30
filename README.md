@@ -3,7 +3,7 @@
 ## Overview
 
 1. Fork the repository
-2. Get familiar with the application
+2. Get familiar with the application. We're here to answer any questions you might have!
 3. Do the tasks :) 
 4. After the session, please set your fork to private
 
