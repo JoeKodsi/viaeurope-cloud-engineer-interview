@@ -12,9 +12,10 @@ Runs on port `4567` by default
 
 ## Running the client (without the api)
 
-`ruby app.rb -p 1234`
-
-`open http://localhost:1234`
+```bash
+ruby app.rb -p 1234
+open http://localhost:1234
+```
 
 ## Endpoints
 
