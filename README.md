@@ -20,8 +20,10 @@
 
 ## Running the application locally
 
-1. `docker compose up`
-2. `open http://localhost:4567`
+```bash
+docker compose up
+open http://localhost:4567
+```
 
 ## Tasks
 
