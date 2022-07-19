@@ -39,6 +39,10 @@ Deploy the application.
 1. Client should be publicly accessible. The client exposes port `4567`
 1. API and redis should be private. The API exposes port `4567`
 
+#### Out of scope
+
+1. Hosting the state file locally for the infrastructure is totally fine.
+
 ## Follow Up Tasks
 
 Now that the application is deployed, there are some additional requirements we can consider. If you think of other important tasks not on this list, please tell us and feel free do them! We don't expect you to finish all/any of these tasks in the session! 
